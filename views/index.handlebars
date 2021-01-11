@@ -5,7 +5,7 @@
 <ul>
   {{#each burgers}}
     {{#unless devoured}}
-      {{> burgers/cat-block sleep=true}}
+      {{> burgers/burgersacomer}}
     {{/unless}}
   {{/each}}
 </ul>
@@ -13,9 +13,9 @@
 <h2>hamburguesas eaten</h2>
 
 <ul>
-  {{#each cats}}
-    {{#if sleepy}}
-      {{> cats/cat-block sleep=false}}
+  {{#each burgers}}
+    {{#if devoured}}
+      {{> burgers/burgerseaten}}
     {{/if}}
   {{/each}}
 </ul>

@@ -1,7 +1,73 @@
-html {
+body {
     min-height: 100%;
-    background-image: url("https://images.unsplash.com/photo-1571091718767-18b5b1457add?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1052&q=80");
+    background-image: url("https://github.com/chavelyo3/Burger/blob/main/public/img/20901210%202.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
+    font-family: 'Montserrat', sans-serif;
+}
+h1,
+.create-form {
+    text-align: center;
+    margin-top: 25px;
+}
+
+
+.waitingDevoured {
+    float: left;
+}
+
+.devoured {
+    float: right;
+}
+
+
+li {
+    background: #F7C095;
+    margin: 5px;
+    padding: 5px;
+    list-style-type: none;
+}
+
+h1,
+h2,
+label {
+    color: white;
+}
+
+.label {
+    font-weight: bold;
+}
+
+.change-devoured {
+    background-color: #8EB56C;
+    border: none;
+    color: black;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    border-radius: 8px;
+}
+
+.delete-burger {
+    background-color:#D45C98;
+    border: none;
+    color: black;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    border-radius: 8px;
+}
+
+.create-update-form {
+    margin: 5px;
+    padding: 5px;
+}
+
+.form-group {
+    margin-bottom: 5px;
 }
