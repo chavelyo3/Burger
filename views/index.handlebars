@@ -1,8 +1,24 @@
+<body role="img" title="burger image" class="background-image background-position-center background-repeat no"
+    style="height:100%" style="height:100%">
+
+
+ <div class="container">
+
 <h1>yo quiero hamburguesas!</h1>
 
-<div class="container-fluid">
-  <div class="row" id="not-devoured">
-    <div class="not-devoured col-lg-6">
+  
+  <form class="create-form">
+
+    <div class="form-group">
+      <label for="nb">Burger Type:</label>
+      <input type="text" id="nb" name="name">
+    <button type="submit">Add<i class="fas fa-hamburger"></i></div></button></form>
+
+
+
+<div class="row"> 
+
+    <div class="ndevoured col-md-6">
       <h2>Ready to eat!</h2>
 
       <ul>
@@ -15,8 +31,8 @@
     </div>
   </div>
 
-  <div class="row" id="devoured">
-    <div class="devoured col-lg-6">
+<div class="devoured col-md-6">
+    
       <h2>Eaten!</h2>
 
       <ul>
@@ -31,15 +47,4 @@
 
 </div>
 
-
-<div class="clear">
-  <h2>Add Burger!</h2>
-  <form class="create-form">
-
-    <div class="form-group">
-      <label for="nb">Burger Type:</label>
-      <input type="text" id="nb" name="name">
-    </div>
-    <button type="submit">Add Burger</button>
-  </form>
-</div>
+</body>

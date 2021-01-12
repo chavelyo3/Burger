@@ -21,7 +21,7 @@ $(function () {
     event.preventDefault();
 
     let newBurger = {
-      burger_name: $("#ca").val().trim(),
+      burger_name: $("#nb").val().trim(),
     };
 
     $.ajax("/api/burgers", {
