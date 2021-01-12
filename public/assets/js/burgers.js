@@ -4,7 +4,7 @@ $(function () {
     let newOrder = $(this).data("newOrder");
 
     let newOrderState = {
-      devourded: newOrder,
+      devoured: newOrder
     };
 
     $.ajax("/api/burgers/" + id, {
@@ -21,7 +21,7 @@ $(function () {
     event.preventDefault();
 
     let newBurger = {
-      burger_name: $("#nb").val().trim(),
+      burger_name: $("#ca").val().trim(),
     };
 
     $.ajax("/api/burgers", {

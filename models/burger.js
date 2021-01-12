@@ -12,8 +12,8 @@ let burgers = {
       cb(res);
     });
   },
-  insertOne: function (objColVals, boolean, condition, cb) {
-    orm.insertOne("burgers", objColVals, boolean, condition, function (res) {
+  insertUno: function (objColVals, boolean, condition, cb) {
+    orm.insertUno("burgers", objColVals, boolean, condition, function (res) {
       cb(res);
     });
   },

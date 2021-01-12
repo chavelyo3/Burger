@@ -10,7 +10,7 @@ let orm = {
       cb(result);
     });
   },
-  insertOne: function(table, cols, vals, cb) {
+  insertUno: function(table, cols, vals, cb) {
     let queryString = `INSERT INTO ${table} (${cols}) VALUES ("${vals}");`;
     console.log(queryString);
 
@@ -22,7 +22,7 @@ let orm = {
       cb(result);
     });
   },
-  updateOne: function(table, objColVals, condition, cb) {
+  updateUno: function(table, objColVals, condition, cb) {
     var queryString = `UPDATE ${table} SET (${objColVals} WHERE ${condition});`;
 
     console.log(queryString);
@@ -34,7 +34,7 @@ let orm = {
       cb(result);
     });
   },
-  deleteOne: function(table, condition, cb) {
+  deleteUno: function(table, condition, cb) {
     var queryString = `DELETE FROM ${table} WHERE ${condition}`;
 
     connection.query(queryString, function(err, result) {
