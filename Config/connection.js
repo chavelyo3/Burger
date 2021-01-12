@@ -1,14 +1,14 @@
-let sql = require("mysql");
+let mysql = require("mysql");
 let connection;
 
 if (process.env.JAWSDB_URL) {
-  connecttion = mysql.createConnection(process.env.JAWSDB_URL);
+  connection = mysql.createConnection(process.env.JAWSDB_URL);
 } else {
-  connection = mysql.connection({
+  connection = mysql.createConnection({
     host: "localhost",
     user: "root",
     password: "Cookieandrocky",
-    database: "burger_db",
+    database: "burgers_db",
   });
 };
 
@@ -17,6 +17,6 @@ connection.connect(function (err) {
     console.error("error connecting" + err.stack);
     return;
   }
-  console.log("connected as id" + connecion.threadId);
+  console.log("connected as id" + connection.threadId);
 });
-module.exports = connections;
+module.exports = connection;

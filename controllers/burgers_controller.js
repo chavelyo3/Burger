@@ -13,11 +13,10 @@ router.get("/", function(req, res) {
   });
   
   router.post("/api/burgers", function(req, res) {
-    burger.createUno([
+    burger.insertOne([
       "burger_name"
-    ], [
-      req.body.name, req.body.sleepy
-    ], function(result) {
+    ], [req.body.burger_name], function(result) {
+        console.log(req.body)
       res.json({ id: result.insertId });
     });
   });

@@ -21,7 +21,7 @@ $(function () {
     event.preventDefault();
 
     let newBurger = {
-      burger_name: $("#ca").val().trim(),
+      burger_name: $("#nb").val().trim(),
     };
 
     $.ajax("/api/burgers", {
@@ -31,10 +31,11 @@ $(function () {
       console.log("new burger added");
 
       location.reload();
+      
     });
   });
 
-  $(".delete-cat").on("click", function (event) {
+  $(".delete-burger").on("click", function (event) {
     let id = $(this).data("id");
 
     // Send the DELETE request.

@@ -1,6 +1,6 @@
-body {
+.body, .html  {
     min-height: 100%;
-    background-image: url("https://github.com/chavelyo3/Burger/blob/main/public/img/20901210%202.jpg");
+    background-image: url("../public/img/backgroundburger.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -10,10 +10,11 @@ h1,
 .create-form {
     text-align: center;
     margin-top: 25px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 
-.waitingDevoured {
+.toBeDevoured {
     float: left;
 }
 
@@ -32,14 +33,14 @@ li {
 h1,
 h2,
 label {
-    color: white;
+    color: black;
 }
 
 .label {
     font-weight: bold;
 }
 
-.change-devoured {
+.burger-eaten {
     background-color: #8EB56C;
     border: none;
     color: black;
@@ -49,6 +50,7 @@ label {
     display: inline-block;
     font-size: 12px;
     border-radius: 8px;
+
 }
 
 .delete-burger {
@@ -61,6 +63,7 @@ label {
     display: inline-block;
     font-size: 12px;
     border-radius: 8px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .create-update-form {

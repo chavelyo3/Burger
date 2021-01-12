@@ -1,19 +1,19 @@
 const orm = require("../Config/orm.js");
 
 let burgers = {
-  selectall: function (cb) {
-    orm.selectall("burgers", function (res) {
+  selectAll: function (cb) {
+    orm.selectAll("burgers", function (res) {
       cb(res);
     });
   },
  
   createUno: function (cols, vals, cb) {
-    orm.create("burgers", cols, vals, function (res) {
+    orm.createUno("burgers", cols, vals, function (res) {
       cb(res);
     });
   },
-  updateUno: function (objColVals, boolean, condition, cb) {
-    orm.updateUno("burgers", objColVals, boolean, condition, function (res) {
+  insertOne: function (objColVals, boolean, condition, cb) {
+    orm.insertOne("burgers", objColVals, boolean, condition, function (res) {
       cb(res);
     });
   },
