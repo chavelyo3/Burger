@@ -18,7 +18,7 @@ html, body {
     border-radius: 8px;
 }
 
-.change-devoured {
+.change-devoured, .change-eaten {
     background-color: #60A165;
     border: none;
     color: black;

@@ -23,7 +23,7 @@ let orm = {
     });
   },
   updateUno: function(table, objColVals, condition, cb) {
-    var queryString = `UPDATE ${table} SET (${objColVals} WHERE ${condition});`;
+    let queryString = `UPDATE ${table} SET (${objColVals} WHERE ${condition});`;
 
     console.log(queryString);
     connection.query(queryString, function(err, result) {
