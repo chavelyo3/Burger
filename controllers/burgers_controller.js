@@ -27,7 +27,7 @@ router.get("/", function(req, res) {
   
     console.log("condition", condition);
   
-    burger.updateUno("devoured", 1, condition, function (result) {
+    burger.updateUno("devoured", req.params.id, function (result) {
       if (result.changedRows == 0) {
         return res.status(404).end();
       } else {

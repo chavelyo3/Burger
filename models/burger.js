@@ -19,8 +19,8 @@ let burgers = {
   },
 
     // update a burger within the database
-    updateUno: function (objColVals, boolean, condition, cb) {
-      orm.updateUno("burgers", objColVals, boolean, condition, function (res) {
+    updateUno: function (objColVals,  condition, cb) {
+      orm.updateUno("burgers", objColVals, condition, function (res) {
         cb(res);
       });
     },
