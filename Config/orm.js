@@ -1,4 +1,4 @@
-const connection = require("../config/connection.js");
+const connection = require("./connection.js");
 
 let orm = {
   selectAll: function(tableInput, cb) {
